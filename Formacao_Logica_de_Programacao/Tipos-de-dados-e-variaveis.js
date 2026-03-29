@@ -7,3 +7,7 @@ let nickname = "Maria mestra do Pikachu"
 console.log("Bem vinda " + nickname)
 console.log(nickname + " entrou no servidor")
 
+//declarando uma constante.
+const message = "Hey World!"
+
+console.log(message + " I'm back!")
