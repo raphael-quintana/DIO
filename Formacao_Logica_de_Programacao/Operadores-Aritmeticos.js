@@ -34,6 +34,7 @@ console.log("operação de módulo " + calculo)
 
 //Incremento e Decremento
 let contador = 1
+
 // '++' incremento
 contador++
 contador++
