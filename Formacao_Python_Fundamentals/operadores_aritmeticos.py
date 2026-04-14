@@ -1,5 +1,5 @@
-produto_1 = 10
-produto_2 = 20
+produto_1 = 30
+produto_2 = 10
 
 print(produto_1 + produto_2) # Adição
 print(produto_1 - produto_2) # Subtração
