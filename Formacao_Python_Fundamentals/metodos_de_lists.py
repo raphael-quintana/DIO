@@ -88,7 +88,8 @@ linguagens = ["python", "js", "c", "java", "csharp"]
 print(linguagens.remove("python"))
 print(linguagens)
 
-#Com o método reverse, nós invertemos a ordem dos objetos na lista
+#Com o método reverse, nós invertemos a ordem dos objetos na lista, espelhando a 
+#lista.
 
 linguagens = ["python", "js", "c", "java", "csharp"]
 print(linguagens)
@@ -96,6 +97,37 @@ print(linguagens)
 
 linguagens.reverse()
 print(linguagens)
+
+
+#Usamos o método sort() para ordenar a lista em ordem alfabética.
+
+linguagens = ["python", "js", "c", "java", "csharp"]
+linguagens.sort()
+print(linguagens)
+
+#Colocando o argumento reverse=True para inverter a ordem da lista
+
+linguagens.sort(reverse=True)
+print(linguagens)
+
+#Colocando o argumento key, adicionamos uma função anônima, para ordenar em ordem
+#crescente em numero de caracteres.
+
+linguagens.sort(key=lambda x: len(x))
+print(linguagens)
+
+#Podemos também usar os 2 argumentos ao mesmo tempo.
+
+linguagens.sort(key=lambda x: len(x), reverse=True)
+print(linguagens)
+
+#Usando a função built-in chamada sorted, podemos fazer o mesmo que o método sort.
+
+linguagens = ["python", "js", "c", "java", "csharp"]
+
+print(sorted(linguagens, key=lambda x: len(x)))
+
+print(sorted(linguagens, key=lambda x: len(x), reverse=True))
 
 
 
