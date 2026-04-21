@@ -28,7 +28,13 @@ print(dados)
 #Os dicionários também aceitam aninhamento, podendo armazenar um dicionário dentro
 #de outro dicionário. Com a única condição de que a chave sempre seja imutável.
 
+contatos = {
+    "jill@gmail.com": {"nome": "Jill", "ID": 44768},
+    "chris@gmail.com": {"nome": "Chris", "ID": 44758},
+    "leon@gmail.com": {"nome": "Leon", "ID": 44799},
+    "claire@gmail.com": {"nome": "Claire", "ID": 9999},
+}
 
-
+print(contatos["chris@gmail.com"]["ID"])
 
 
