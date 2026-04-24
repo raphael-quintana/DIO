@@ -13,6 +13,6 @@ class Cachorro:
         print("Au")
 
 
-d= Cachorro("Dog", "preto")
+d = Cachorro("Dog", "preto")
 d.falar()
 
