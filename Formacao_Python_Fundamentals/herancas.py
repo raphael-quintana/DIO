@@ -93,3 +93,4 @@ print(Gato.__mro__)
 
 print(Ornitorrinco.mro())
 #Method Resolution Order - Ordem de Resolução de Métodos
+
