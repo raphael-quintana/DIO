@@ -130,3 +130,90 @@ def ola_mundo():
 
 
 ola_mundo()
+
+
+#Funções de decoração com argumentos
+
+#Podemos usar *args e **kwargs na função interna, com iso ela aceitará um numero
+#arbitrário de argumentos posicionais e de palavras-chave
+
+#Exemplo
+#def duplicar(func):
+#    def envelope(*args, **kwargs):
+#        func(*args, **kwargs)
+#        return func(*args, **kwargs)
+#
+#    return envelope
+#
+#@duplicar
+#def aprender(tecnologia):
+#    print(f"Estou aprendendo {tecnologia}!")
+#
+# aprender("Python")
+
+
+#exemplo2
+
+def meu_decorador(function):
+    def envelope(*args, **kwargs):
+        print("faz algo antes de executar")
+        function(*args, **kwargs)
+        print("faz algo depois de executar")
+
+    return envelope
+
+#Usando os args e kwargs, podemos aumentar o numero de argumentos da funcao decorada
+@meu_decorador
+def ola_mundo(nome, idade):
+    print(f"ola, mundo {nome} e tenho {idade} anos!")
+
+
+ola_mundo("John", 22)
+
+
+#Decorador retornando valor da função decorada
+
+
+def meu_decorador(function):
+    def envelope(*args, **kwargs):
+        print("faz algo antes de executar")
+        resultado = function(*args, **kwargs)
+        print("faz algo depois de executar")
+        return resultado
+
+    return envelope
+
+#Usando os args e kwargs, podemos aumentar o numero de argumentos da funcao decorada
+@meu_decorador
+def ola_mundo(nome) :
+    print(f"ola, mundo {nome}!")
+    return nome.upper()
+
+resultado = ola_mundo("John")
+
+
+
+
+#Introspecção
+
+#Introspecção é a capacidade de um objeto saber sobre seus próprios atributos
+#em tempo de execução.
+
+
+import functools
+
+def meu_decorador(function):
+    @functools.wraps(function)
+    def envelope(*args, **kwargs):
+        print("faz algo antes de executar")
+        function(*args, **kwargs)
+        print("faz algo depois de executar")
+        
+
+    return envelope
+
+@meu_decorador
+def ola_mundo(nome) :
+    print(f"ola, mundo {nome}!")
+
+
