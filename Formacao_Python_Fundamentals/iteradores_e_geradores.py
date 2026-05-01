@@ -63,3 +63,8 @@ def meu_gerador(numeros: list[int]):
 
 for i in meu_gerador(numeros=[1, 2, 3]):
     print(i)
+
+#O Gerador é legal para otimizar memória, funções simples.
+#O Iterador é mais interessante para estruturas mais complexas de dados, aumentando
+# a extensabilidade do código.
+
