@@ -10,3 +10,4 @@ file.write("Escrevendo em dados em um novo txt.")
 file.writelines(["\n", "escrevendo", " ", "um", " ", "novo", " ", "texto."])
 
 file.close()
+
