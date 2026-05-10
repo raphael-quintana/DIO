@@ -29,6 +29,24 @@ file = open("/home/raphael-quintana/Workspace/DIO/Formacao_Python_Fundamentals/l
 print(file.readline())
 file.close()
 
+#Mostrando todas as linhas usando o laço for
+
+file = open("/home/raphael-quintana/Workspace/DIO/Formacao_Python_Fundamentals/listas.py", "r")
+for linha in file.readline():
+    print(linha)
+file.close()
+
+#Também podemos iterar pelas linhas do arquivo com o while
+
+file = open("/home/raphael-quintana/Workspace/DIO/Formacao_Python_Fundamentals/listas.py", "r")
+while len(linha := file.readline()):
+    print(linha)
+file.close()
+
+
+#Usando readlines()
 file = open("/home/raphael-quintana/Workspace/DIO/Formacao_Python_Fundamentals/listas.py", "r")
 print(file.readlines())
 file.close()
+
+
