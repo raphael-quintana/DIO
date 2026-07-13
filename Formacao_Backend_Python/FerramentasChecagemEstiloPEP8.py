@@ -14,3 +14,12 @@
 
 #pip install black
 #black meu_codigo.py
+
+#Organização de imports com isort
+
+#Isort é uma ferramenta Python para classificar importações alfabeticamente e 
+#separá-las automaticamente em seções. Ele proporciona uma maneira rápida e fácil
+#de ordenar e categorizar suas importações.
+
+#pip install isort
+#isort meu_codigo.py
